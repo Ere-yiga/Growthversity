@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000; 
@@ -22,6 +27,15 @@ body {
     animation-delay: 0.6s;   
 }
 
+.hero.lazy-load {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5s ease-in-out;
+}
+.hero.lazy-load.loaded {
+    opacity: 1;
+    visibility: visible;
+}
 
 .container {
     width: 90%;
@@ -71,7 +85,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to right, #4a90e2, #2c3e50); /* Softer, dimmed gradient */
+    background: linear-gradient(to right, #4a90e2, #2c3e50);
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -107,13 +121,14 @@ body {
 
 .about-us{
     margin-top: 3rem;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-card {
-    min-height: 100vh;
+    min-height: auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -131,7 +146,7 @@ body {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    overflow: hhidden;
+    overflow: hidden;
 }
 
 .about-us-paragraph {
@@ -195,6 +210,18 @@ body {
     margin: 0; 
 }
 
+.back-to-top {
+    display: inline-block;;
+    font-size: 30px; 
+    color: var(--header);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+    color: #aaa;
+}
+
 @media (max-width: 768px) {
     .navbar .nav-links {
         position: fixed;
@@ -220,6 +247,12 @@ body {
         display: block;
         font-size: 30px;
         cursor: pointer;
+        /*ADDED*/
+        z-index: 1001; 
+        position: fixed;
+        top: 20px; 
+        right: 20px;
+        transition: transform 0.3s ease;
     }
 
     .gallery h2 {
