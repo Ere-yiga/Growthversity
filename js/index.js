@@ -5,9 +5,9 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     
     if (navLinks.classList.contains('active')) {
-        menuToggle.innerHTML = '✖'; // Change to X
+        menuToggle.innerHTML = '✖'; 
     } else {
-        menuToggle.innerHTML = '☰'; // Change back to hamburger
+        menuToggle.innerHTML = '☰'; 
     }
 });
 
@@ -17,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add 'loaded' class to trigger CSS transition
                 heroSection.classList.add('loaded');
-                observer.disconnect(); // Stop observing after the section is loaded
+                observer.disconnect(); 
             }
         });
     }, {
-        rootMargin: '0px 0px -50px 0px', // Trigger 50px before the hero section is in view
-        threshold: 0.1 // Trigger when 10% of the element is visible
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.1 
     });
 
     observer.observe(heroSection);
