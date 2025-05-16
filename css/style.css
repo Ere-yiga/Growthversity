@@ -31,6 +31,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 5s ease-in-out;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .hero.lazy-load.loaded {
     opacity: 1;
