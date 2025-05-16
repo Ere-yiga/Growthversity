@@ -30,19 +30,19 @@ body {
 .hero.lazy-load {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 5s ease-in-out;
-    
+    transition: opacity 5s ease-in-out;  
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+
 .hero.lazy-load.loaded {
     opacity: 1;
     visibility: visible;
 }
 
-.container {
+.nav-container {
     width: 90%;
     margin: auto;
     max-width: 1200px;
@@ -53,7 +53,7 @@ body {
     padding: 20px 0;
 }
 
-.navbar .container {
+.navbar .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,6 +158,12 @@ body {
 
 .about-us-paragraph {
     margin-top: 2rem;
+}
+
+.why-join-us, 
+.past-event{
+    padding: 0;
+    margin: 0;
 }
 
 .gallery {
