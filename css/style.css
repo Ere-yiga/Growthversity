@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+   
     background-color: #000; 
     color: #fff;
     line-height: 1.6;
@@ -20,6 +20,14 @@ body {
 :root{
     --header: #2ecc71;
     --hover: #27ae60;
+}
+
+li,p,a,.logo{
+    font-family: 'Nunito', sans-serif;
+}
+
+h2, h3, {
+    font-family: 'poppins', sans-serif;
 }
 
 .animate__zoomIn {
