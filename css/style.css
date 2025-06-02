@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,6 @@ html {
 }
 
 body {
-   
     background-color: #000; 
     color: #fff;
     line-height: 1.6;
@@ -26,7 +25,7 @@ li,p,a,.logo{
     font-family: 'Nunito', sans-serif;
 }
 
-h2, h3, {
+h2, h3{
     font-family: 'poppins', sans-serif;
 }
 
@@ -98,12 +97,16 @@ h2, h3, {
 }
 
 .hero {
-    background: linear-gradient(135deg, #00ff7f, #00b894);
+    /* background: linear-gradient(135deg, #00ff7f, #00b894); */
     padding: 100px 0;
     text-align: center;
     color: #fff;
     height: 100vh;
     overflow: hidden;
+    background: url("../hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero h2 {
@@ -195,7 +198,7 @@ h2, h3, {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Auto adjust columns */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
     gap: 20px;
 }
 
@@ -268,7 +271,7 @@ h2, h3, {
         display: block;
         font-size: 30px;
         cursor: pointer;
-        /*ADDED*/
+        
         z-index: 1001; 
         position: fixed;
         top: 20px; 
