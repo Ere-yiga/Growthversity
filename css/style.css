@@ -88,16 +88,35 @@ h2, h3{
     color: var(--hover);  
 }
 
+/* Hamburger always visible on mobile, hidden on desktop */
 .navbar .menu-toggle {
     display: block;
     font-size: 30px;
     cursor: pointer;
     z-index: 1000; 
     position: relative;
+    background: transparent;
+    border: none;
+    transition: background 0.3s;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.navbar.sticky {
+    background: #222; 
+    transition: background 0.3s;
+}
+
+.navbar.sticky .logo,
+.navbar.sticky .menu-toggle {
+    background: transparent !important;
+    color: inherit !important;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+    padding: 0;
 }
 
 .hero {
-    /* background: linear-gradient(135deg, #00ff7f, #00b894); */
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -265,47 +284,73 @@ h2, h3{
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 2000;
+    }
+    .navbar .nav-container {
+        background: inherit;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar .logo {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 1001;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .menu-toggle {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
     .navbar .nav-links {
         position: fixed;
         top: 0;
-        right: -220px; 
+        right: -220px;
         width: 200px;
         height: 100vh;
         background: #111;
-        display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
         gap: 20px;
         transition: right 0.3s ease;
         z-index: 999;
+        display: flex;
     }
-
     .navbar .nav-links.active {
         right: 0;
     }
-
-    .navbar .menu-toggle {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 1001; 
-        position: fixed;
-        top: 20px; 
-        right: 20px;
-        transition: transform 0.3s ease;
+    .navbar .nav-container {
+        position: relative;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    .gallery h2 {
-        font-size: 28px; 
-    }
-
-    .gallery p {
-        font-size: 16px;
+    body {
+        padding-top: 70px !important;
     }
 }
 
 @media (min-width: 768px) {
+      html{
+        scroll-behavior: smooth;
+    }
+
     .navbar .menu-toggle {
         display: none; 
     }
@@ -362,7 +407,61 @@ h2, h3{
     }
 }
 
+@media (min-width: 1024px) {
+    html{
+        scroll-behavior: smooth;
+    }
+  .gallery-grid {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery-item img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.navbar .logo svg {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .navbar .logo {
+    font-size: 32px;
+  }
+  .navbar .logo svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 @media (max-width: 480px) {
+      html{
+        scroll-behavior: smooth;
+    }
+    
     body {
         overflow-x: hidden;
         font-size: 14px; 

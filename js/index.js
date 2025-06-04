@@ -1,11 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.querySelector(".nav-links");
+  const navbar = document.querySelector(".navbar");
 
   // Mobile menu toggle
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
     menuToggle.innerHTML = navLinks.classList.contains("active") ? '✖' : '☰';
+  });
+
+  // Sticky navbar on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
   });
 
   // Lazy-load hero section
