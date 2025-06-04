@@ -56,8 +56,11 @@ h2, h3{
 }
 
 .navbar {
-    background: #000;
-    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2000;
 }
 
 .navbar .nav-container {
@@ -88,7 +91,6 @@ h2, h3{
     color: var(--hover);  
 }
 
-/* Hamburger always visible on mobile, hidden on desktop */
 .navbar .menu-toggle {
     display: block;
     font-size: 30px;
@@ -116,16 +118,13 @@ h2, h3{
     padding: 0;
 }
 
-.hero {
+ .hero {
     padding: 100px 0;
     text-align: center;
     color: #fff;
     height: 100vh;
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+} 
 
 .hero h2 {
     font-size: 48px;
