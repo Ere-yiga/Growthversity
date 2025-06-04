@@ -103,7 +103,6 @@ h2, h3{
     color: #fff;
     height: 100vh;
     overflow: hidden;
-    background: url("../hero.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,6 +244,25 @@ h2, h3{
 .back-to-top:hover {
     color: #aaa;
 }
+#msg{
+    background: linear-gradient(90deg, #2ecc71 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    background-blend-mode: multiply;
+    opacity: 0.97;
+}
 
 @media (max-width: 768px) {
     .navbar .nav-links {
@@ -271,7 +289,6 @@ h2, h3{
         display: block;
         font-size: 30px;
         cursor: pointer;
-        
         z-index: 1001; 
         position: fixed;
         top: 20px; 
@@ -393,5 +410,3 @@ h2, h3{
         font-size: 15px;
     }
 }
-
- 
