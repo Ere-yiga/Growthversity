@@ -298,9 +298,8 @@ h2, h3{
         justify-content: center;
     }
     .navbar .logo { 
-        position: absolute;
+        position: relative;
         left: 20px;
-        top: 20px;
         z-index: 1001;
         margin: 0;
         padding: 0;
@@ -310,10 +309,11 @@ h2, h3{
     .navbar .menu-toggle {
         display: flex;
         align-items: center;
-        position: absolute;
-        top: 20px;
+        position: relative;
         right: 20px;
         z-index: 1001;
+        padding: 0;
+        line-height: 1;  
     }
     .navbar .nav-links { 
         position: fixed;
@@ -338,7 +338,8 @@ h2, h3{
         min-height: 70px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0 20px;
     }
     body {
         padding-top: 70px !important;
