@@ -297,7 +297,7 @@ h2, h3{
         align-items: center;
         justify-content: center;
     }
-    .navbar .logo {
+    .navbar .logo { 
         position: absolute;
         left: 20px;
         top: 20px;
@@ -305,7 +305,7 @@ h2, h3{
         margin: 0;
         padding: 0;
         display: flex;
-        align-items: center;
+        align-items: center; 
     }
     .navbar .menu-toggle {
         display: flex;
@@ -315,7 +315,7 @@ h2, h3{
         right: 20px;
         z-index: 1001;
     }
-    .navbar .nav-links {
+    .navbar .nav-links { 
         position: fixed;
         top: 0;
         right: -220px;
@@ -328,7 +328,7 @@ h2, h3{
         gap: 20px;
         transition: right 0.3s ease;
         z-index: 999;
-        display: flex;
+        display: flex; 
     }
     .navbar .nav-links.active {
         right: 0;
