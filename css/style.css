@@ -6,7 +6,7 @@
 
 :root {
     --green: #2ecc71;
-    --green-dark: #1a9e52;
+    --green-dark: #03140a;
     --gold: #ffd700;
     --black: #080808;
     --off-black: #0f0f0f;
@@ -318,7 +318,7 @@ body {
 .hero-headline-accent {
     font-style: normal;
     color: var(--green);
-    display: block;
+    display: inline; 
 }
 
 .hero-bottom-row {
