@@ -4,139 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Growthversity W/ YAPA</title>
 </head>
 <body>
-    <div>
-        <nav class="navbar">
-            <div class="nav-container">
-                <h1 class="logo">
-                    Growthversity W/ YAPA
-                </h1>
-                <ul class="nav-links">
-                    <li><a href="#about-us">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank">Join Us</a></li>
-                </ul>
-                <div class="menu-toggle" id="menu-toggle">
-                    ☰
-                </div>
-            </div>
-        </nav>
-        
-        <header class="hero lazy-load">
-            <div class="container">
-                <div id="msg">
-                    <h2>Welcome to Growthversity</h2>
-                <p style="color: orange"><b>Where Growth Isn't Just a Goal — It's a Lifestyle..</b></p>
-                </div>
-                
-                <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" class="btn">Join Our Community</a>
-            </div>
-        </header>
+
+    <nav class="nav" id="navbar">
+        <a href="#" class="nav-logo">Growth<span class="nav-logo-accent">versity</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#why-join">Why Join</a></li>
+            <li><a href="#gallery">Events</a></li>
+            <li><a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="nav-cta">Join Us</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about-us" class="mobile-link">About</a>
+        <a href="#why-join" class="mobile-link">Why Join</a>
+        <a href="#gallery" class="mobile-link">Events</a>
+        <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="mobile-link mobile-link-cta">Join the Community</a>
     </div>
 
-    <section class="about-us"  data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500">
-        <div class="about-card" >
-            <h2 id="about-us">About Us</h2>
-            <h3>Growthversity W/ YAPA</h3>
-            <img src="./img/hero-img.jpg" alt="growthversity w/ YAPA">
-            
-            <div class="about-us-paragraph">
-                <p>
-                    Growthversity is a growth-driven community designed to inspire, equip, and support individuals on their personal and professional journeys.
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-headline">
+            Growth<br>
+            <em class="hero-headline-accent">Versity.</em>
+        </div>
+        <div class="hero-bottom-row">
+            <p class="hero-tagline">
+                Where growth isn't just a goal —<br>
+                <strong class="hero-tagline-strong">it's a lifestyle.</strong><br>
+                Join a tribe that's building, rising, and thriving together.
+            </p>
+            <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="btn-primary">
+                Join the Community
+                <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                </svg>
+            </a>
+        </div>
+        <p class="hero-scroll-hint">Scroll to explore</p>
+    </section>
+
+    <section class="about-section" id="about-us">
+        <div class="about-inner">
+            <div class="about-text reveal">
+                <p class="section-label">Who we are</p>
+                <h2 class="about-heading">A community built for <em class="about-heading-accent">intentional</em> growth.</h2>
+                <p class="about-body">
+                    Growthversity W/ YAPA is a growth-driven community designed to inspire, equip, and support individuals on their personal and professional journeys.
+                </p>
+                <p class="about-body">
                     Whether you're seeking mentorship, learning opportunities, valuable connections, or simply a circle that challenges you to rise higher — Growthversity is your space.
-
-                    At Growthversity, you don't just grow — you thrive.
                 </p>
-               
-                <p>
-                    Ready to unlock your next level?
-                    <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs">Join Our Community</a>
-                </p>
+                <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="btn-primary">
+                    Join Our Community
+                    <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8h10M9 4l4 4-4 4"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="about-image-wrap reveal reveal-delayed" >
+                <img src="./img/hero-img.jpg" alt="Growthversity community" class="about-image">
+                <div class="about-badge">At Growthversity,<br>you don't just grow —<br>you thrive.</div>
             </div>
         </div>
     </section>
 
-    <div class="about-card" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="500">
-        <h2 class="why-join-us">Why Join Us</h2>
-        <div class="why-join-us-paragraph">
-            <p>
-                Personal Development Resources: Access weekly teachings, guides, and webinars tailored to boost your mindset, skills, and relationships.
-            </p>
-
-            <p>
-                Exclusive Growth Series: Be part of impactful series like Creating value, Heart Matter, and more, crafted for deep personal transformation.
-            </p>
-
-            <p>
-                Mentorship & Networking: Connect with mentors, industry leaders, and a tribe that truly wants to see you win.
-            </p>
-
-            <p>
-                A Safe Space: Grow at your pace in a community where encouragement, accountability, and authenticity are our core values.
-            </p>
-
-            <p>
-                Events and Workshops: Participate in live sessions, challenges, and workshops that stretch you and celebrate your wins.
-            </p>
-
-            <h3 style="margin-top: 1rem">Still Wondering If Growthversity is for You?</h3>
-            <h4>If you’re someone who:</h4>    
-            <p>Believes in intentional living</p>                
-            <p>Desires to build real, meaningful connections</p>    
-            <p>Is passionate about personal excellence</p>    
-            <p>Loves learning and becoming better every day</p>    
-            <p>Then Growthversity is exactly where you belong.</p>    
-            <p>Let's grow. Let's thrive. Let’s do it — together.</p>    
-            <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank">Become a Part of Growthversity Today</a>
-        </div>
-    </div>
-
-    <section id="gallery" class="gallery" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
-        <div class="container">
-            <h2 class="past-event">Past Events</h2>
-            <p class="past-event-para">
-                Take a look at our past events and the amazing fliers that promoted them
-            </p>
-
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="./img/pic-1.jpg" alt="pic- 1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+    <section class="pillars-section" id="why-join">
+        <div class="pillars-container">
+            <div class="pillars-header reveal">
+                <h2 class="pillars-heading">WHY<br>JOIN US</h2>
+                <p class="pillars-intro">Five reasons thousands of people chose to grow with Growthversity — and never looked back.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">01</div>
+                    <h3 class="pillar-title">Personal Development</h3>
+                    <p class="pillar-body">Weekly teachings, guides, and webinars tailored to boost your mindset, skills, and relationships.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/pic-2.jpg" alt="pic- 2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">02</div>
+                    <h3 class="pillar-title">Exclusive Growth Series</h3>
+                    <p class="pillar-body">Be part of impactful series like Creating Value and Heart Matters — crafted for deep personal transformation.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/pic-3.jpg" alt="pic- 3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">03</div>
+                    <h3 class="pillar-title">Mentorship & Network</h3>
+                    <p class="pillar-body">Connect with mentors, industry leaders, and a tribe that truly wants to see you win.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/pic-4.jpg" alt="pic- 4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">04</div>
+                    <h3 class="pillar-title">A Safe Space</h3>
+                    <p class="pillar-body">Grow at your own pace in a community where encouragement, accountability, and authenticity are core values.</p>
                 </div>
-
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">05</div>
+                    <h3 class="pillar-title">Events & Workshops</h3>
+                    <p class="pillar-body">Participate in live sessions, challenges, and workshops that stretch you and celebrate your wins.</p>
+                </div>
+                <div class="pillar-card pillar-card-accent reveal">
+                    <div class="pillar-number pillar-number-accent">W/</div>
+                    <h3 class="pillar-title pillar-title-accent">YAPA</h3>
+                    <p class="pillar-body">All of this, wrapped in a movement led by people who've lived the journey and want to pull you forward.</p>
+                </div>
             </div>
         </div>
-        
-        <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" class="btn">Join Our Community</a>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Growthversity W/ YAPA. <br>All rights reserved.</p>
+
+    <section class="forwho-section" id="for-who">
+        <div class="forwho-inner">
+            <p class="section-label reveal">This is for you if...</p>
+            <h2 class="forwho-heading reveal">Still wondering if<br>Growthversity is for you?</h2>
+            <ul class="forwho-list reveal">
+                <li class="forwho-item">You believe in intentional living</li>
+                <li class="forwho-item">You desire real, meaningful connections</li>
+                <li class="forwho-item">You're passionate about personal excellence</li>
+                <li class="forwho-item">You love learning and becoming better daily</li>
+            </ul>
+            <div class="forwho-cta reveal">
+                <p class="forwho-cta-text">Then Growthversity is exactly where you belong.</p>
+                <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="btn-primary">
+                    Become a Part Today
+                    <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8h10M9 4l4 4-4 4"/>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <a href="#" class="back-to-top">^</a>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-inner">
+            <p class="section-label reveal">Past Events</p>
+            <h2 class="gallery-heading reveal">Moments that moved us.</h2>
+            <p class="gallery-subtext reveal">A glimpse into our events, sessions, and community fliers.</p>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="./img/pic-1.jpg" alt="Growthversity event 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/pic-2.jpg" alt="Growthversity event 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/pic-3.jpg" alt="Growthversity event 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/pic-4.jpg" alt="Growthversity event 4" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+        <h2 class="cta-heading reveal">Let's Grow.<br>Let's Thrive.</h2>
+        <p class="cta-body reveal">The community is free. The growth is priceless. What are you waiting for?</p>
+        <a href="https://chat.whatsapp.com/L9YfV2tcPxlC6unWsfVeJs" target="_blank" class="btn-dark reveal">
+            Join Growthversity Now
+            <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+        </a>
+    </section>
+
+    <footer class="footer" id="footer">
+        <p class="footer-copy">&copy; 2026 Growthversity W/ YAPA. All rights reserved.</p>
+        <a href="#hero" class="footer-back-top">Back to top ↑</a>
     </footer>
 
     <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
 </body>
 </html>
